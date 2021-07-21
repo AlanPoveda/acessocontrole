@@ -19,10 +19,7 @@ Isso para acessar o banco, porém usando o POSTMAN, da para fazer CREATE, UPDATE
 
 
 #Dependencias 🧭
-dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
 
 	// https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
 	implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.12.4'
@@ -56,9 +53,4 @@ dependencies {
 	implementation 'com.h2database:h2'
   
 
-	testImplementation ('org.springframework.boot:spring-boot-starter-test'){
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
-
-}
 
